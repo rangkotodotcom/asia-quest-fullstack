@@ -15,7 +15,12 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    if (to.name === "auth" && stores.getters["auth/isLoggedIn"]) {
+    if (
+        (to.name === "auth" ||
+            to.name === "LoginView" ||
+            to.name === "RegistrationView") &&
+        stores.getters["auth/isLoggedIn"]
+    ) {
         next({ path: "/" });
     } else if (to.matched.some((record) => record.meta.isAuth)) {
         if (!stores.getters["auth/isLoggedIn"]) {

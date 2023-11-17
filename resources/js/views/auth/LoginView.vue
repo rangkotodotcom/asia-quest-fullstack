@@ -66,7 +66,7 @@
 
 <script>
 import authService from "../../services/auth.service";
-
+import stores from "../../stores";
 
 export default {
     data() {
@@ -92,6 +92,7 @@ export default {
                     const response = await responseLogin.data;
 
                     if (response.status) {
+                        stores.dispatch("auth/set_login");
                         localStorage.setItem('token', response.content.token);
                         this.$router.push('/');
                     }

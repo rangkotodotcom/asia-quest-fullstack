@@ -9,18 +9,16 @@ export default {
         },
     },
     mutations: {
-        setLogged(state, data) {
+        setLogged(state) {
             state.isLoggedIn = true;
-            state.latisKey = data;
         },
         setLogout(state) {
             state.isLoggedIn = false;
-            state.latisKey = null;
         },
     },
     actions: {
-        set_login({ commit }, data) {
-            commit("setLogged", data);
+        set_login({ commit }) {
+            commit("setLogged");
         },
         set_logout({ commit }) {
             commit("setLogout");
