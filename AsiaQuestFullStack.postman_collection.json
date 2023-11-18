@@ -1,0 +1,1086 @@
+{
+	"info": {
+		"_postman_id": "2a435662-49df-4785-b8f8-c60d4ac2e59c",
+		"name": "AsiaQuestFullStack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11499462"
+	},
+	"item": [
+		{
+			"name": "Registrasi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jhon Doe\",\r\n    \"email\":\"email@domain.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registrasi",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Jhon Doe\",\r\n    \"email\":\"email@domain.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:17:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:17:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 201,\n    \"content\": {\n        \"name\": \"Jhon Doe\",\n        \"email\": \"email@domain.com\",\n        \"token\": \"1|I6uDnwCWKqpU0m06CMJRkmpUqJRFMZhIU2uF4rhe\"\n    },\n    \"message\": \"User register successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"email@domain.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"email@domain.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:20:38 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:20:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": {\n        \"name\": \"Jhon Doe\",\n        \"email\": \"email@domain.com\",\n        \"token\": \"2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:22:14 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:22:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Jhon Doe\",\n    \"email\": \"email@domain.com\",\n    \"password\": \"$2y$10$FCk2o.iL6sowGTL5rxgjWOPqxVZGcPYsZ3Kq5wdNwKxa/XXaCSY2m\",\n    \"created_at\": \"2023-11-17T15:17:57.000000Z\",\n    \"updated_at\": \"2023-11-17T15:17:57.000000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "To Do List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todolist",
+						"5c951b0a-3ada-4425-8f56-eed114272fe0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "To Do List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:24:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:24:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": [\n        {\n            \"id\": \"8c555cf4-2c47-4185-b181-a3aabd5664f4\",\n            \"user_id\": 1,\n            \"taks\": \"taks 1\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:28.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:28.000000Z\"\n        },\n        {\n            \"id\": \"5c951b0a-3ada-4425-8f56-eed114272fe0\",\n            \"user_id\": 1,\n            \"taks\": \"taks 2\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:41.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:41.000000Z\"\n        }\n    ],\n    \"message\": \"Data found\"\n}"
+				},
+				{
+					"name": "User Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist",
+								"5c951b0a-3ada-4425-8f56-eed114272fe0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:27:55 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:27:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": {\n        \"id\": \"5c951b0a-3ada-4425-8f56-eed114272fe0\",\n        \"user_id\": 1,\n        \"taks\": \"taks 2\",\n        \"status\": \"0\",\n        \"created_at\": \"2023-11-17T15:24:41.000000Z\",\n        \"updated_at\": \"2023-11-17T15:24:41.000000Z\"\n    },\n    \"message\": \"Data found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Store To Do List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taks\":\"taks 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todolist",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todolist"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store To Do List",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taks\":\"taks 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:24:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:24:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": [\n        {\n            \"id\": \"8c555cf4-2c47-4185-b181-a3aabd5664f4\",\n            \"user_id\": 1,\n            \"taks\": \"taks 1\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:28.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:28.000000Z\"\n        },\n        {\n            \"id\": \"5c951b0a-3ada-4425-8f56-eed114272fe0\",\n            \"user_id\": 1,\n            \"taks\": \"taks 2\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:41.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:41.000000Z\"\n        }\n    ],\n    \"message\": \"Data saved successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update To Do List",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taks\":\"taks edit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todolist",
+						"5c951b0a-3ada-4425-8f56-eed114272fe0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update To Do List",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taks\":\"taks edit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist",
+								"5c951b0a-3ada-4425-8f56-eed114272fe0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:30:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:30:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": [\n        {\n            \"id\": \"8c555cf4-2c47-4185-b181-a3aabd5664f4\",\n            \"user_id\": 1,\n            \"taks\": \"taks 1\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:28.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:28.000000Z\"\n        },\n        {\n            \"id\": \"5c951b0a-3ada-4425-8f56-eed114272fe0\",\n            \"user_id\": 1,\n            \"taks\": \"taks edit\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:41.000000Z\",\n            \"updated_at\": \"2023-11-17T15:30:07.000000Z\"\n        }\n    ],\n    \"message\": \"Data updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Status To Do List",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0/status",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todolist",
+						"5c951b0a-3ada-4425-8f56-eed114272fe0",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Status To Do List",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist",
+								"5c951b0a-3ada-4425-8f56-eed114272fe0",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:31:28 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:31:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"content\": [\n        {\n            \"id\": \"8c555cf4-2c47-4185-b181-a3aabd5664f4\",\n            \"user_id\": 1,\n            \"taks\": \"taks 1\",\n            \"status\": \"0\",\n            \"created_at\": \"2023-11-17T15:24:28.000000Z\",\n            \"updated_at\": \"2023-11-17T15:24:28.000000Z\"\n        },\n        {\n            \"id\": \"5c951b0a-3ada-4425-8f56-eed114272fe0\",\n            \"user_id\": 1,\n            \"taks\": \"taks edit\",\n            \"status\": \"1\",\n            \"created_at\": \"2023-11-17T15:24:41.000000Z\",\n            \"updated_at\": \"2023-11-17T15:31:28.000000Z\"\n        }\n    ],\n    \"message\": \"Data updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete To Do List",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todolist",
+						"5c951b0a-3ada-4425-8f56-eed114272fe0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete To Do List",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|js9fOoeBmmjXb7DlL3mDC3mUu2YU5JIqEgrQtd7J",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/todolist/5c951b0a-3ada-4425-8f56-eed114272fe0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todolist",
+								"5c951b0a-3ada-4425-8f56-eed114272fe0"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:31:51 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 15:31:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
