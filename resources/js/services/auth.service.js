@@ -1,4 +1,5 @@
 import axios from "axios";
+const token = localStorage.getItem("token");
 
 class AuthService {
     registration(data) {
@@ -37,6 +38,7 @@ class AuthService {
     logout() {
         return axios.post("/api/logout", {
             headers: {
+                Authorization: "Bearer " + token,
                 "Content-Type": "application/json",
                 Accept: "application/json",
             },
