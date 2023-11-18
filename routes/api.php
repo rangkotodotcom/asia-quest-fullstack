@@ -27,4 +27,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::put('/todolist/{todolist}/status', [ToDoListController::class, 'updateStatus']);
     Route::apiResource('/todolist', ToDoListController::class);
+
+
+    Route::post('/logout', [AuthController::class, 'logout']);
 });

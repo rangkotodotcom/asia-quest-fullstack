@@ -33,6 +33,15 @@ class AuthService {
             }
         );
     }
+
+    logout() {
+        return axios.post("/api/logout", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+        });
+    }
 }
 
 export default new AuthService();
