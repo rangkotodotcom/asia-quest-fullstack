@@ -24,6 +24,8 @@
         "@headlessui/vue": "^1.7.16",
         "@heroicons/vue": "^2.0.18",
         "@tailwindcss/forms": "^0.5.7",
-        "vue": "^3.2.36"
+        "vue": "^3.2.36",
+        "vue-draggable-next": "^2.2.1",
+        "vuedraggable": "^2.24.3"
     }
 }

@@ -64,8 +64,8 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr v-for="item, index in myTaks">
+                    <draggable v-model="myTaks" @change="log" tag="tbody" @start="dragging = true">
+                        <tr v-for="item, index in myTaks" :key="item.id">
                             <th
                                 class="border-t-0 md:px-6 px-2 align-middle border-l-0 border-r-0 md:text-sm text-xs md:py4 py-3 text-center flex items-center">
                                 <span class="ml-3 font-bold text-blueGray-600 text-center">
@@ -94,7 +94,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </tbody>
+                    </draggable>
                 </table>
             </div>
         </div>
@@ -104,10 +104,14 @@
 
 
 <script>
-import { mapGetters } from "vuex";
-import ToDoService from "../../services/todo.service"
+import ToDoService from "../../services/todo.service";
+
+import { VueDraggableNext } from 'vue-draggable-next'
 
 export default {
+    name: "todolist",
+    display: "Table",
+    order: 8,
     data() {
         return {
             showForm: false,
@@ -115,14 +119,25 @@ export default {
                 id: null,
                 taks: null,
             },
+            dragging: false
         }
     },
     computed: {
-        ...mapGetters({
-            myTaks: 'todolist/myTaks',
-        }),
+        // ...mapGetters({
+        //     myTaks: 'todolist/myTaks',
+        // }),
+        myTaks: {
+            get() {
+                return this.$store.getters['todolist/myTaks'];
+            },
+            set(value) {
+                this.$store.dispatch('todolist/set_mytaks', value)
+            }
+        }
     },
-
+    components: {
+        draggable: VueDraggableNext,
+    },
     async mounted() {
         if (this.$store.getters['todolist/myTaks'] === null) {
             try {
@@ -134,11 +149,13 @@ export default {
                     this.$store.dispatch("todolist/set_mytaks", dataMyTaks.content);
                 }
             } catch (e) {
-                alert(e);
             }
         }
     },
     methods: {
+        log() {
+
+        },
         buttonAdd() {
             this.form.id = null;
             this.form.taks = null;
